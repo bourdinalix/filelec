@@ -1,0 +1,35 @@
+.presentation {
+    @include vertical-spacing-bottom;
+    .presentation-wrapper{
+        @include wrapper;
+    }
+
+    .presentation-container{
+        margin-bottom: rem(15);
+    }
+
+    .presentation-title{
+        @include title(2);
+        margin-bottom: rem(15);
+    }
+
+    .presentation-content{       
+    }
+
+    .presentation-list-container{
+        margin-bottom: rem(40);
+    }
+
+    .presentation-list{
+        margin-left: rem(10);
+        margin-bottom: rem(15);
+        list-style: inside;
+    }
+
+    .presentation-liste-data{
+
+    }
+    .presentation-element{
+
+    }
+}

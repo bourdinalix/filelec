@@ -1,0 +1,60 @@
+.panier{
+    @include vertical-spacing-bottom;
+    .panier-wrapper{
+        @include wrapper;
+    }
+
+    .panier-title{
+        @include title(2);
+        margin-bottom: rem(40);
+    }
+
+    .panier-container{
+        margin-bottom: rem(40);
+        
+    }
+
+    .panier-element{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: rem(20);
+        border: 1px solid black;
+        padding-right: rem(15);
+        padding-left: rem(15);
+        padding-bottom: rem(5);
+        padding-top: rem(5);
+    }
+
+    .panier-img{
+        width: 10%;
+    }
+
+    .panier-form{
+        text-align: center;
+    }
+
+    .panier-send{
+        @include resetBtn;
+        @include styleBtn;
+        text-transform: capitalize;
+        background-color: $color-white;
+        color: $color-main;
+        border: rem(1) solid $color-main;
+        &:hover{
+            background-color: $color-main;
+            color: $color-white;
+        }
+    }
+
+    .error-form{
+        background-color: $color-red;
+        border-radius: rem(5);
+        color: $color-red-dark;
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        margin-bottom: rem(20);
+        margin-top: rem(20);
+        padding-left: rem(10);
+    }
+}

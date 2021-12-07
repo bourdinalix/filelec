@@ -1,0 +1,45 @@
+.account{
+    @include vertical-spacing-bottom;
+    .account-wrapper{
+       @include wrapper; 
+    }
+
+    .account-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .account-list{
+        flex-grow: 3;
+        border-right: rem(1) solid black;
+        padding-right: rem(30);
+    }
+
+    .account-list-title{
+        @include title(2);
+    }
+
+    .account-order-pay-img{
+        width: 10%;
+    }
+
+    .account-order-pay-element{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+        padding-right: rem(15);
+        padding-left: rem(15);
+        padding-bottom: rem(5);
+        padding-top: rem(5);
+        margin-bottom: rem(30);
+    }
+
+    .account-infos{
+        padding-left: rem(10);
+    }
+
+    .account-infos-title{
+        @include title(2);
+    }
+}

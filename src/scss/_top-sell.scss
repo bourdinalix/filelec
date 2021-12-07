@@ -1,0 +1,34 @@
+.top-sell{
+    @include vertical-spacing-bottom;
+    .top-sell-wrapper{
+        @include wrapper;
+
+    }
+
+    .top-sell-title{
+        @include title(2);
+        margin-bottom: rem(20);
+    }
+
+    .top-sell-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .products-img-wrapper{
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        height: 0;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+}

@@ -1,0 +1,30 @@
+.admin-page{
+    @include vertical-spacing-bottom;
+    .admin-page-wrapper{
+        @include wrapper;
+    }
+
+    .admin-page-title{
+        @include title(2);
+    }
+    
+    .admin-page-products{
+        display: flex;
+        justify-content: center;
+    }
+
+    table{
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    table tbody, thead, td, th{
+        border: 1px solid black;
+    }
+
+    table td, th{
+        padding: rem(10);
+    }
+}
+
+

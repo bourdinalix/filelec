@@ -1,0 +1,83 @@
+.contact{
+    @include vertical-spacing-bottom;
+    .contact-wrapper{
+        @include wrapper;
+    }
+
+    .contact-title{
+        @include title(2);
+        margin-bottom: rem(20);
+    }
+
+    .error-form{
+        background-color: $color-red;
+        border-radius: rem(5);
+        color: $color-red-dark;
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        margin-bottom: rem(20);
+        margin-top: rem(20);
+        padding-left: rem(10);
+    }
+
+    .success-form{
+        background-color: $color-green;
+        border-radius: rem(5);
+        color: $color-green-dark;
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        margin-bottom: rem(20);
+        margin-top: rem(20);
+        padding-left: rem(10);
+    }
+
+    .form-element{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(25);
+        @include tablet{
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include desktop{
+            width: 50%;
+        }
+    }
+
+    .form-element-label{
+        margin-bottom: rem(10);
+    }
+
+    .form-element-input{
+        height: rem(28);
+        padding: rem(6) rem(12);
+        font-size: 16px;
+        border: rem(1) solid $color-grey;
+    }
+
+    .form-element-textarea{
+        height: rem(100);
+        resize: none;
+    }
+
+    .form-action{
+        text-align: center;
+        margin-top: rem(40);
+        @include mobile{
+            margin-top: rem(20);
+        }
+        .send{
+            @include resetBtn;
+            @include styleBtn;
+            text-transform: capitalize;
+            background-color: $color-white;
+            color: $color-main;
+            border: rem(1) solid $color-main;
+            &:hover{
+                background-color: $color-main;
+                color: $color-white;
+            }
+        }
+    }
+}

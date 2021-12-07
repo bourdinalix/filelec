@@ -1,0 +1,15 @@
+{
+    "name": "mac/ppe-filelec",
+    "authors": [
+        {
+            "name": "Elbaze Jeremy",
+            "email": "jeremy-elbaze@outlook.fr"
+        }
+    ],
+    "require": {
+        "mailjet/mailjet-apiv3-php": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {"Acme\\": "src/"}
+    }
+}

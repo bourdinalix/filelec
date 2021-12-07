@@ -1,0 +1,49 @@
+.hero-banner{
+    @include vertical-spacing-bottom;
+    .hero-banner-wrapper{
+        @include wrapper;
+    }
+
+
+
+    .hero-banner-title{
+        @include title;
+        @include vertical-spacing-bottom(.5);
+        text-align: center;
+        letter-spacing: 0.5;
+        font-style: italic;
+    }
+
+    .hero-banner-container{
+        position: relative;
+    }
+
+    .hero-banner-media{
+        img{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    .hero-banner-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center
+    }
+
+    .hero-banner-media-txt{
+        @include text;
+        color: $color-white;
+        text-transform: uppercase;
+    }
+
+    .hero-banner-btn{
+        @include resetBtn;
+        @include styleBtn;
+        color: $color-white;
+    }
+}
